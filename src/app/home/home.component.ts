@@ -28,6 +28,13 @@ export class HomeComponent {
       navigation: '/pass-management',
     });
 
+    this.cardConfig.push({
+      cardHeader: 'FAQ',
+      cardTitle: 'Frequently Asked Questions',
+      cardText: 'View or edit the FAQ info.',
+      navigation: '/faq',
+    });
+
     if (keyCloakService.isAllowed('metrics')) {
       this.cardConfig.push({
         cardHeader: 'Site Metrics',
